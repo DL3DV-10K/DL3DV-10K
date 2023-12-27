@@ -11037,3 +11037,9 @@ header.masthead h1, header.masthead .h1 {
         /* font-family: 'Arial', sans-serif; Use a beautiful font. You can also import custom fonts if needed */
         font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+#chart-container {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+  }
