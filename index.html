@@ -37,7 +37,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <video autoplay muted loop id="myVideo">
-                <source src="assets/img/teaser_1080.mp4" type="video/mp4">
+                <source src="assets/img/teaser1080-2x.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
             <div class="container px-4 px-lg-5 h-100">
@@ -139,17 +139,71 @@
                 </div>
             </div>
 
-            <div class="container-fluid px-lg-5 d-flex justify-content-center align-items-center">
+            <!-- <div class="container-fluid px-lg-5 d-flex justify-content-center align-items-center">
                 <div class="col-md-6 text-center">
                     <img class="img-fluid" src="assets/img/Scene_Category_by_secondary_POI.png" alt="..." />
                 </div>
+            </div> -->
+
+            <div class="container-fluid px-lg-5 d-flex justify-content-center align-items-center">
+                <figure class="col-md-6 text-center">
+                    <div id="chart-container"> </div>
+                    <figcaption class="figure-caption text-center">
+                        <strong>Fig. 1.</strong>
+                        Scene distribution by POI category. The angle of each class denotes its data proportion. Interior: primary POI category. Exterior: secondary POI category.
+                    </figcaption>
+                </figure>
             </div>
 
-            <div id="chart-container"></div>
+            <div class="container-fluid px-lg-5 d-flex justify-content-center align-items-center">
+                <figure class="col-md-6 text-center">
+                    <img class="img-fluid" src="assets/img/Scene_Category_by_secondary_POI.png" alt="..." />
+                    <figcaption class="figure-caption text-center">
+                        <strong>Fig. 2.</strong>
+                        Number of scenes within secondary POI category. The legend contains the mapping between the primary and secondary POI
+                        categories. We observe that <em>schools-universities</em> and <em>residential-area</em> are the predominant scenes in our DL3DV-10K dataset. In contrast,
+                        locations such as government and civic service facilities (e.g., <em>post office</em>, <em>police station</em>, <em>court house</em>, and <em>city hall</em>) are less frequently
+                        captured due to the challenges in accessing these areas for detailed video recording.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="container-fluid px-lg-5 d-flex justify-content-center align-items-center">
+                <figure class="col-md-6 text-center">
+                    <img class="img-fluid" src="assets/img/Scene_complexity_primary-POI.png" alt="..." />
+                    <figcaption class="figure-caption text-center">
+                        <strong>Fig. 3.</strong>
+                        We show the distribution of scene category (the primary POI locations) by complexity indices, including environmental setting,
+                        light conditions, reflective surface, and transparent materials. Attributes in light conditions include: natural light (<em>nlight</em>), artificial light
+                        (<em>alight</em>), and a combination of both (<em>mlight</em>). Reflection class includes <em>more</em>, <em>medium</em>, <em>less</em>, and <em>none</em>. Transparency class likewise
+                    </figcaption>
+                </figure>
+            </div>
+<!-- 
             <div class="container-fluid px-lg-5 d-flex justify-content-center align-items-center">
                 <div class="col-md-6 text-center">
                     <img class="img-fluid" src="assets/img/Scene_complexity_primary-POI.png" alt="..." />
                 </div>
+            </div> -->
+
+            <!-- <div class="container-fluid px-lg-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid" src="assets/img/duration_frequency_distribution.png" alt="..." />
+                </div>
+            </div> -->
+
+
+            <div class="container-fluid px-lg-5 d-flex justify-content-center align-items-center">
+                <figure class="col-md-6 text-center">
+                    <img class="img-fluid" src="assets/img/duration_frequency_distribution.png" alt="Descriptive Alt Text" />
+                    <figcaption class="figure-caption text-center">
+                        <strong>Fig. 4.</strong>
+                        We show the distribution of video duration and frequency metric in 10,510 videos. The minimum duration for video shooting
+                        with consumer mobile devices is set at 60 secs, while for drone cameras, it’s at least 45 secs. In our dataset, the median video duration is
+                        69.5 secs. Furthermore, the median value of the frequency metric, determined by the average image intensity, stands at 2.6e-06. Based on
+                        this median value, we categorize scenes into high frequency (<em>high freq</em>) and low frequency (<em>low freq</em>) classes.
+                        </figcaption>
+                </figure>
             </div>
 
         </section>
